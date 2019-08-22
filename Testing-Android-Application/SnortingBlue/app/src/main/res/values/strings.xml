@@ -1,0 +1,12 @@
+<resources>
+<string name="app_name">SnortingBlue</string>
+<string name="X">X</string>
+<string name="Y">Y</string>
+<string name="Floor">Floor</string>
+<string name="Duration">Duration</string>
+<string name="Start">Start</string>
+<string name="Cancel">Cancel</string>
+<string name="Done">Done</string>
+    <string name="Minutes">Minutes</string>
+    <string name="TestID">TestID</string>
+</resources>

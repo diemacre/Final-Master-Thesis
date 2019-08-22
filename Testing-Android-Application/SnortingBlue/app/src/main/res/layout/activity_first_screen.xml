@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <Spinner
+        android:id="@+id/Building"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:id="@+id/Floor"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Building"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/Duration"
+        android:layout_width="41dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Floor"
+        android:ems="10"
+        android:hint="@string/Duration"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/X"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:text="@string/X"
+        android:layout_below="@+id/Building"/>
+
+    <TextView
+        android:id="@+id/Y"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:text="@string/Y"
+        android:layout_below="@+id/Floor"
+        android:layout_toRightOf="@+id/X"/>
+
+    <WebView
+        android:id="@+id/Map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/X"
+        android:layout_above="@+id/Start"/>
+
+    <Button
+        android:id="@+id/Start"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="Start"
+        android:text="@string/Start" />
+
+    <EditText
+        android:id="@+id/Minutes"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/Duration"
+        android:ems="10"
+        android:hint="@string/Minutes"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/TestID"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_toEndOf="@+id/Minutes"
+        android:ems="10"
+        android:hint="@string/TestID"
+        android:inputType="number" />
+
+</RelativeLayout>
